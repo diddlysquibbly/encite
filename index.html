@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specialist Software Consultancy for UK Housing Associations</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom config for professional colors and font -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ha-blue': '#1e3a8a', // Dark Blue for corporate trust
+                        'ha-teal': '#14b8a6', // Teal for digital/growth accent
+                        'ha-light': '#f3f4f6',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Ensuring smooth scrolling for navigation links */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-white">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+            <h1 class="text-2xl font-bold text-ha-blue">
+                Encite Ltd.
+            </h1>
+            <nav class="hidden md:flex space-x-8 text-lg font-medium">
+                <a href="#services" class="hover:text-ha-teal transition duration-300">Services</a>
+                <a href="#expertise" class="hover:text-ha-teal transition duration-300">Expertise</a>
+                <a href="#contact" class="px-4 py-1.5 bg-ha-teal text-white rounded-lg shadow-md hover:bg-teal-600 transition duration-300">Contact Us</a>
+            </nav>
+            <!-- Simple mobile menu placeholder -->
+            <button class="md:hidden text-ha-blue focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- 1. Hero Section -->
+    <section class="bg-ha-light py-20 md:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="inline-block px-3 py-1 text-sm font-semibold text-ha-teal bg-ha-teal/10 rounded-full mb-4">UK Housing Sector Focus</span>
+            <h2 class="text-4xl md:text-6xl font-extrabold text-ha-blue leading-tight mb-6">
+                Digital Clarity for <br class="hidden sm:inline"> UK Housing Associations.
+            </h2>
+            <p class="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto mb-10">
+                We are specialist consultants helping you transition smoothly between systems, integrate complex data, and unlock regulatory compliance through **robust reporting**.
+            </p>
+            <a href="#contact" class="inline-block px-10 py-4 bg-ha-teal text-white text-xl font-bold rounded-xl shadow-lg hover:shadow-xl hover:bg-teal-600 transition duration-300 transform hover:scale-105">
+                Start Your Data Migration
+            </a>
+        </div>
+    </section>
+
+    <!-- 2. Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold text-ha-blue mb-4">Our Core Consulting Services</h3>
+                <p class="text-lg text-gray-500 max-w-2xl mx-auto">Focused expertise to manage your most critical systems and data challenges.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1: Data Migrations (UPDATED) -->
+                <div class="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-ha-blue">
+                    <div class="flex items-center space-x-4 mb-4">
+                         <!-- Icon for Data Migration (Database/Moving) -->
+                        <svg class="w-10 h-10 text-ha-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10M4 7h16M4 7l2.293-2.293A1 1 0 017 4h10a1 1 0 01.707.293L20 7m0 0v10m0-3h-4m-4 0H9m-4 0H4"></path></svg>
+                        <h4 class="text-xl font-semibold text-ha-blue">System Migrations</h4>
+                    </div>
+                    <p class="text-gray-600">
+                        Secure, zero-downtime migration, leveraging our expertise in **SQL Server export**. We handle tenancy, finance, and asset data between core systems (e.g., legacy platforms to Dynamics 365, Orchard, or Capita), ensuring data integrity and audit compliance.
+                    </p>
+                </div>
+
+                <!-- Service 2: Integrations (NO CHANGE) -->
+                <div class="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-ha-teal">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <!-- Icon for Integration (Link/API) -->
+                        <svg class="w-10 h-10 text-ha-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.101a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+                        <h4 class="text-xl font-semibold text-ha-blue">API & System Integration</h4>
+                    </div>
+                    <p class="text-gray-600">
+                        Seamlessly connecting your core housing systems with tenant portals, CRM, finance packages, and IoT devices. We build reliable, scalable APIs and data pipelines to eliminate manual entry and automate workflows.
+                    </p>
+                </div>
+
+                <!-- Service 3: Reporting (UPDATED) -->
+                <div class="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-ha-blue">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <!-- Icon for Reporting (Chart) -->
+                        <svg class="w-10 h-10 text-ha-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                        <h4 class="text-xl font-semibold text-ha-blue">Regulatory Reporting & BI</h4>
+                    </div>
+                    <p class="text-gray-600">
+                        Transforming raw data into actionable insights and compliance submissions (e.g., SDR, HCA returns). Our data warehousing and **SQL Server reporting skills** are key to implementing Power BI or custom solutions for clear, real-time performance metrics.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Expertise/Callout Section (UPDATED TITLE) -->
+    <section id="expertise" class="py-20 bg-ha-blue text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-3xl font-bold mb-4">Why Partner with Encite Ltd?</h3>
+            <p class="text-xl opacity-80 max-w-3xl mx-auto mb-12">
+                We understand the specific regulatory environment, funding models, and system pressures faced by UK Housing Associations—because this is all we do.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+                <!-- Point 1 -->
+                <div class="p-6 bg-ha-blue/70 rounded-lg shadow-xl border border-ha-teal/50">
+                    <p class="text-2xl font-bold text-ha-teal mb-2">UK Regulatory Alignment</p>
+                    <p class="text-sm opacity-90">All projects are executed with full understanding of Housing Regulator requirements and data standards (e.g., SDR). Compliance is built-in, not bolted on.</p>
+                </div>
+                <!-- Point 2 -->
+                <div class="p-6 bg-ha-blue/70 rounded-lg shadow-xl border border-ha-teal/50">
+                    <p class="text-2xl font-bold text-ha-teal mb-2">Data Integrity First</p>
+                    <p class="text-sm opacity-90">Our rigorous methodology guarantees accuracy during migrations and integrations, ensuring your single source of truth remains reliable for all operational decisions.</p>
+                </div>
+                <!-- Point 3 -->
+                <div class="p-6 bg-ha-blue/70 rounded-lg shadow-xl border border-ha-teal/50">
+                    <p class="text-2xl font-bold text-ha-teal mb-2">System Agnostic</p>
+                    <p class="text-sm opacity-90">Whether you use Aareon QL, Capita, or Microsoft Dynamics, our expertise covers the full spectrum of housing management platforms used in the UK.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Final CTA / Contact Form (Simplified) -->
+    <section id="contact" class="py-20 bg-ha-light">
+        <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 text-center bg-white p-10 rounded-xl shadow-2xl">
+            <h3 class="text-3xl font-bold text-ha-blue mb-4">Ready for a Data-Driven Future?</h3>
+            <p class="text-lg text-gray-600 mb-8">
+                Let's discuss your specific integration, migration, or reporting challenges in a free 30-minute consultation.
+            </p>
+
+            <form>
+                <input type="text" placeholder="Your Name" class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:ring-ha-teal focus:border-ha-teal" required>
+                <input type="email" placeholder="Work Email" class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:ring-ha-teal focus:border-ha-teal" required>
+                <textarea placeholder="Briefly describe your challenge..." rows="4" class="w-full p-3 mb-6 border border-gray-300 rounded-lg focus:ring-ha-teal focus:border-ha-teal" required></textarea>
+                <button type="submit" class="w-full px-8 py-3 bg-ha-teal text-white text-lg font-semibold rounded-lg shadow-md hover:bg-teal-600 transition duration-300">
+                    Request Consultation
+                </button>
+            </form>
+            <p class="mt-6 text-sm text-gray-500">We aim to respond to all enquiries within 1 business day.</p>
+        </div>
+    </section>
+
+    <!-- Footer (UPDATED) -->
+    <footer class="bg-ha-blue/90 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left md:flex justify-between items-center">
+            <div>
+                <p class="text-xl font-bold mb-2">Encite Ltd</p>
+                <p class="text-sm opacity-75">&copy; 2024. All rights reserved.</p>
+            </div>
+            <div class="mt-4 md:mt-0 space-x-6">
+                <a href="mailto:contact@example.com" class="hover:text-ha-teal transition duration-300 text-sm">Email Us</a>
+                <span class="text-sm">|</span>
+                <span class="text-sm">Phone: 020 8123 4567</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
