@@ -36,16 +36,17 @@
     <header class="sticky top-0 z-50 bg-white shadow-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
             
-            <!-- Company Logo (Placeholder) -->
+            <!-- Company Logo -->
             <a href="#" class="flex items-center">
                 <!-- 
-                    ACTION REQUIRED: 
-                    1. Replace the entire 'src' value below with your raw GitHub URL (starting with https://raw.githubusercontent.com/).
-                    2. If your logo is not a PNG (e.g., it's an SVG), please update the 'alt' text to reflect the actual file type.
+                    NOTE ON DEBUGGING: If the logo fails to load (wrong URL, wrong file name/extension, or GitHub issue), 
+                    it will be replaced by a red box with "LOGO FAIL" to indicate a problem with the URL.
+                    Double-check the filename and ensure it uses the EXACT capitalization and extension (e.g., .PNG vs .png).
                 -->
                 <img src="https://raw.githubusercontent.com/diddlysquibbly/encite/main/original-logos-2017-Apr-1056-58ff8ffb8813d.png" 
                      alt="Encite Ltd. Logo" 
-                     class="h-8 md:h-10 w-auto">
+                     class="h-8 md:h-10 w-auto"
+                     onerror="this.onerror=null; this.src='https://placehold.co/160x40/f87171/ffffff?text=LOGO+FAIL';">
             </a>
 
             <nav class="hidden md:flex space-x-8 text-lg font-medium">
@@ -180,7 +181,7 @@
                 <p class="text-sm opacity-75">&copy; 2024. All rights reserved.</p>
             </div>
             <div class="mt-4 md:mt-0 space-x-6">
-                <a href="mailto:nick@encite.co.uk" class="hover:text-ha-teal transition duration-300 text-sm">Email Us</a>
+                <a href="mailto:contact@example.com" class="hover:text-ha-teal transition duration-300 text-sm">Email Us</a>
                 <span class="text-sm">|</span>
                 <span class="text-sm">Phone: 07792 561909</span>
             </div>
